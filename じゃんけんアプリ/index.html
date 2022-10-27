@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="gradient">
+  
+  <header>  
+    <p class="start"><img src="img/start.jpg" alt="タイトル"></p>
+    <div class="start_comment">
+      <p id="counter" class="fight_num">0</p>      
+      <p class="result_text">fight</p>
+    </div>  
+  </header>
+
+  <main>
+    <div class="teki_te">
+      <img id="my_te" src="img/teki_te.jpg" width="100" height="100">
+      <img id="teki_te" src="img/teki_te.jpg" width="100" height="100">      
+    </div>  
+
+    <div class="char">
+      <div id="mychar" class="mychar">
+        <img src="img/jan.jpg" alt="自分側の画像">
+      </div>
+
+      <div id="tekichar" class="tekichar">
+        <img src="img/teki1.jpg" alt="敵側の画像">
+      </div>
+    </div>
+    
+    <!-- <div class="beam">
+      <div id="mybeam">
+        <img src="img/beam_j.jpg" alt="自分のビーム">
+      </div>
+
+      <div id="tekibeam">
+        <img src="img/beam_t.jpg" alt="敵のビーム">
+      </div>
+    </div>      -->
+    
+    <ul class="te" id="start_btn">      
+        <div class="img_te">
+          <input type="image" src="img/jan0.jpg" onclick="Click(0);"alt="gu" class="start_btn">
+        </div>
+
+        <!-- <li id="choose_btn" onclick="Click(0);"><img src="img/jan0.jpg" alt="gu"></li> -->    
+        <div class="img_te">
+          <input type="image" src="img/jan1.jpg" onclick="Click(1);"alt="cho" class="start_btn">
+        </div>
+
+        <!-- <li id="choose_btn" onclick="Click(1);"><img src="img/jan1.jpg" alt="cho"></li> -->
+        <div class="img_te">
+          <input type="image" src="img/jan2.jpg" onclick="Click(2);"alt="pa" class="start_btn">
+        </div>      
+      
+        <!-- <li id="choose_btn" onclick="Click(2);"><img src="img/jan2.jpg" alt="pa"></li> -->
+    </ul> 
+
+    <a href="" class="btn btn-gradient" onclick="window.location.reload();" id="reset"><span>はじめから</span></a>   
+
+  </main>    
+
+    <div id="result" class="result"></div>    
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+ 
+</body>
+</html>

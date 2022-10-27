@@ -1,0 +1,357 @@
+html,
+body,
+main {
+  height:100%;
+}
+
+.start img{
+  width: 400px;
+  height: 50px;
+  /* margin: 0 auto; */
+  border-radius: 5%;
+
+}
+
+.teki_te{
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 50px; */
+  box-sizing: border-box;
+  padding: 0 15%; 
+}
+
+.teki_te img{
+  border-radius: 50%;
+  /* margin: 0 0 0 80%;   */
+  width:130px;
+  height: auto;
+}
+
+.my_te img{
+  border-radius: 50%;
+  /* margin: 0 0 0 80%;   */
+  width:130px;
+  height: auto;
+}
+
+.mychar img{
+  width: 400px;
+  height: 400px;
+  border-radius: 30%;
+}
+
+.tekichar img{
+  width: 400px;
+  height: 400px;
+  border-radius: 30%;
+}
+
+.char {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 50px; */
+  box-sizing: border-box;
+  padding: 0 20%; 
+  /* margin: 10px 0 0; */
+}
+
+/* --beam-- */
+
+/* #mybeam img{
+  width: 380px;
+  height: auto;
+} */
+
+/* #tekibeam img{
+  width: 380px;
+  height: auto;
+} */
+
+/* .beam{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 30%;
+} */
+
+/* .mybeam img.is_show{
+  overflow: hidden;
+  position: relative;
+} */
+
+/* .mybeam img.is_show:before {
+  animation: is_show 2s cubic-bezier(.4, 0, .2, 1) forwards;
+  background: #fff;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+} */
+
+/* @keyframes mybeam img is_show {
+  100% {
+    transform: translateX(100%);
+  }
+} */
+
+/* .mybeam.is-show {
+  width: 450px;
+} */
+
+/* #tekibeam {
+  width: 0;
+  height: 180px;
+  overflow: hidden;
+  transition: 2000ms linear;
+}
+
+#tekibeam.is-show {
+  width: 450px;
+} */
+
+
+
+.start_comment{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 45%;   
+}
+
+.result_text{
+  font-size: 48px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.start_btn{
+  /* width: 300px; */  
+  display: flex;
+  justify-content: center;
+
+  border-radius: 50%;
+  width: 85%;
+  height: auto;
+  /* margin: auto; */
+}
+
+.fight_num{
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.te{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 25%; 
+}
+
+
+.img_te:hover{
+  opacity: 0.5;
+}
+
+
+body{
+  margin:0;
+  padding:0;
+  text-align:left;
+  font-size: 32px;
+  background-color: #000000;
+  padding: 0px;
+  margin: 0px;
+}
+
+#gradient
+{
+ width: 100%;
+ height: 800px;
+ padding: 0px;
+ margin: 0px;
+}
+
+
+ header{
+  /* background-color: #fff;
+  border-bottom: 1px solid #ccc; */
+  text-align: center;
+}
+
+li{
+  list-style-type:none;
+  /* border: 1px solid #666;
+  background-color: #FFF;
+  display:table-cell;  定義 */
+  cursor: pointer;
+}
+
+/* #gu_btn:hover{
+  background: #99FFFF;
+}
+
+#cho_btn:hover{
+  background: #FFFF99;
+}
+
+#par_btn:hover{
+  background: #FFCCCC;
+} */
+
+.result{
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 40%;
+  font-family: 'Fasthand', cursive;
+  font-size: 750%;
+  /* background-color: #FFFF99; */
+  border-radius: 20%;
+}
+
+
+
+.sky{
+  /* background: #000; */
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+}
+
+.hanabi{  
+  /* position: absolute; */
+  animation-name: hanabi;
+  animation-timing-function:linear;
+  animation-iteration-count :infinite;
+}
+.hanabi_1{
+  background-image: url('../img/hanabi_4.jpg');
+  top: 0;
+  left: 0;
+  animation-duration:3s;
+}
+
+
+@keyframes hanabi{
+	0%{
+		opacity: 0;
+		transform: scale(0.1);
+	}
+  50%{
+		opacity: 1;
+		transform: scale(1);
+	}
+	90%{
+		opacity: 1;
+		transform: scale(1);
+	}
+  100%{
+		opacity: 0;
+		transform: scale(1);
+	}
+}
+
+/* .reload{
+  direction: none;  
+  display: flex;
+  justify-content: flex-end;
+
+
+} */
+
+
+/* --reload--- */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  justify-content: flex-end;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-gradient {
+  font-weight: normal;
+
+  color: #fff;
+  border-radius: 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(40%, #ff3cac),
+    to(#562b7c)
+  );
+  background-image: -webkit-linear-gradient(left, #ff3cac 40%, #562b7c 100%);
+  background-image: linear-gradient(90deg, #ff3cac 40%, #562b7c 100%);
+}
+
+a.btn-gradient:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ff3cac),
+    color-stop(#562b7c),
+    to(#2b86c5)
+  );
+
+  background-image: -webkit-linear-gradient(left, #ff3cac, #562b7c, #2b86c5);
+
+  background-image: linear-gradient(90deg, #ff3cac, #562b7c, #2b86c5);
+}
+
+a.btn-gradient span {
+  position: relative;
+  z-index: 1;
+}
+
+a.btn-gradient:hover {
+  color: #fff;
+}
+
+a.btn-gradient:hover:after {
+  opacity: 0;
+}
